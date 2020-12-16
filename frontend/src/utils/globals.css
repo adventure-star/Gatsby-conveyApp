@@ -1,0 +1,43 @@
+@tailwind base;
+
+@tailwind components;
+
+@import url('https://fonts.googleapis.com/css?family=Inter');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+@variants focus, hover {
+  .fill-green-custom {
+    @apply fill-green;
+  }
+}
+
+* {
+  @apply break-normal;
+}
+
+h2 {
+  @apply text-xl;
+}
+
+a {
+  @apply  inline-block;
+}
+
+* {
+  font-family: "Inter"
+}
+
+button.primary {
+  @apply mx-auto bg-primary rounded-lg px-6 py-4 text-white uppercase;
+}
+
+button.primary-sm{
+  @apply mx-auto bg-primary rounded-lg text-sm px-4 py-2 text-white uppercase;
+}
+
+button.secondary {
+  @apply mx-auto bg-white rounded-lg px-6 py-4 text-gray-900 uppercase;
+}
+
+@tailwind utilities;
+
